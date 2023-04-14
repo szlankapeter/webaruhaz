@@ -1,0 +1,40 @@
+main{
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.col-sm-3{
+    border: 1px black solid;
+    margin: 10px;
+    padding: 10px;
+}
+h2{
+    border-bottom: 1px solid black;
+    background-color: rgba(201, 201, 201, 0.212);
+}
+
+.ablak_container{
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 10px 10px 8px 10px #888888;
+    border-radius: 5px;
+    width: 60%;
+    height: 400px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.bezar{
+    float: right;
+    margin: 10px;
+    color: red;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.bezar:hover{
+    cursor: pointer;
+    color: red;
+    text-decoration: none;
+}
