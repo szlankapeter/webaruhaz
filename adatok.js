@@ -42,6 +42,6 @@ export const KEPLISTA = ["img/header.jpg",
 export const VIDEOLISTA = ["img/movie480.webm",
     "img/movie480_vp9.webm",
     "img/movie480_vp10.webm",
-    "img/movie480_vp11.webm",
+    "img/movie480_vp11_Trim.webm",
     "img/movie480_vp912.webm",
     "img/movie480_vp913.webm"]
