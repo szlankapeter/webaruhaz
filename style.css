@@ -1,39 +1,75 @@
-main{
+body{
+    background-image: url(img/background.jfif);
+    background-size: cover;
+    
+}
+main {
+    color: whitesmoke;
     position: relative;
     width: 80%;
     margin: auto;
 }
 
-.col-sm-3{
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-sm-3 {
     border: 1px black solid;
     margin: 10px;
     padding: 10px;
+    height: 300px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
 }
-h2{
-    border-bottom: 1px solid black;
-    background-color: rgba(201, 201, 201, 0.212);
+.col-sm-3:hover{
+    cursor: pointer;
 }
 
-.ablak_container{
-    background-color: white;
+
+button{
+    position: absolute;
+    bottom: 5px;
+    left: 100px;
+    background-color: darkblue;
+    border: none;
+    border-radius: 5px;
+}
+
+img {
+    width: 200px;
+}
+
+.ablak_container {
+    backdrop-filter: blur(50px);
+    color: whitesmoke;
     border: 1px solid black;
-    box-shadow: 10px 10px 8px 10px #888888;
     border-radius: 5px;
     width: 60%;
     height: 400px;
     position: absolute;
-    top: 30%;
+    top: 15%;
     left: 20%;
 }
 
-.bezar{
+.bezar {
     float: right;
-    margin: 10px;
     color: red;
+    background-color: white;
+    width: 35px;
+    border-radius: 5px;
+    height: 35px;
+    text-align: center;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 2em;
 }
-.bezar:hover{
+
+.bezar:hover {
     cursor: pointer;
     color: red;
     text-decoration: none;

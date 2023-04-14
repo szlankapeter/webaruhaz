@@ -1,22 +1,47 @@
 export const KUTYALISTA = [
     {
-        nev: "Dézi",
-        kor: 14,
-        fajta: "keverék"
+        nev: "Counter Strike Global Offensive",
+        ar: "Ingyenes",
+        fajta: "Akció"
     },
     {
-        nev: "Fruzsina",
-        kor: 12,
-        fajta: "foxterrier"
+        nev: "Cyberpunk 2077",
+        ar: "60€",
+        fajta: "Akció"
     },
     {
-        nev: "Bodri",
-        kor: 10,
-        fajta: "puli"
+        nev: "Call of Duty Modern Warfare",
+        ar: "60€",
+        fajta: "Akció"
     },
     {
-        nev: "Daci",
-        kor: 7,
-        fajta: "keverék"
+        nev: "Elden Ring",
+        ar: "60€",
+        fajta: "Akció"
+    },
+    {
+        nev: "DEATH STRANDING",
+        ar: "60€",
+        fajta: "Akció"
+    },
+    {
+        nev: "Spider-Man: Miles Morales",
+        ar: "60€",
+        fajta: "Akció"
     }
 ]
+
+export const KEPLISTA = ["img/header.jpg",
+    "img/header1.jpg",
+    "img/header2.jpg",
+    "img/header3.jpg",
+    "img/header4.jpg",
+    "img/header5.jpg"
+];
+
+export const VIDEOLISTA = ["img/movie480.webm",
+    "img/movie480_vp9.webm",
+    "img/movie480_vp10.webm",
+    "img/movie480_vp11.webm",
+    "img/movie480_vp912.webm",
+    "img/movie480_vp913.webm"]
