@@ -9,10 +9,13 @@ $(function () {
 function feltolt() {
   let txt = "";
   txt += "<header><h1>Adatok Listázása</h1></header>";
-  txt += `<nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <p class="navbar-brand">Kutya adatainak megtekintése</p>
-                <p class="navbar-brand">Admin felület</p>
+  txt += `<nav>
+            <div class="nav_container">
+                <ul>
+                  <li><a>Public felület</a></li>
+                  <li><a>Admin felülelt</a></li>
+                  <li><button class="kosar_b">KOSÁR</button></li>
+                </ul>
             </div>
         </nav>`;
 
@@ -23,7 +26,7 @@ function feltolt() {
     txt += `<h2>${KUTYALISTA[i].nev}</h2>`;
     txt += `<p>ár: ${KUTYALISTA[i].ar}</p>`;
     txt += `<p>műfaj: ${KUTYALISTA[i].fajta}</p>`;
-    txt += `<button id="showItem-${i}">Mutat</button>`;
+    txt += `<div class="button_container"><button id="showItem-${i}" class="mk_b">Mutat</button> <button class="mk_b">Kosárba</button></div>`;
     txt += `</div>`;
   }
   txt += "</article>";
