@@ -1,4 +1,4 @@
-import { KUTYALISTA, KEPLISTA, VIDEOLISTA } from "./adatok.js";
+import { JATEKLISTA, KEPLISTA, VIDEOLISTA } from "./adatok.js";
 const main = $("main");
 $(function () {
   const txt = feltolt();
@@ -20,12 +20,12 @@ function feltolt() {
         </nav>`;
 
   txt += `<article class="row">`;
-  for (let i = 0; i < KUTYALISTA.length; i++) {
+  for (let i = 0; i < JATEKLISTA.length; i++) {
     txt += `<div class="col-sm-3">`;
     txt += `<img src=${KEPLISTA[i]}>`;
-    txt += `<h2>${KUTYALISTA[i].nev}</h2>`;
-    txt += `<p>ár: ${KUTYALISTA[i].ar}</p>`;
-    txt += `<p>műfaj: ${KUTYALISTA[i].fajta}</p>`;
+    txt += `<h2>${JATEKLISTA[i].nev}</h2>`;
+    txt += `<p>ár: ${JATEKLISTA[i].ar}</p>`;
+    txt += `<p>műfaj: ${JATEKLISTA[i].fajta}</p>`;
     txt += `<div class="button_container"><button id="showItem-${i}" class="mk_b">Mutat</button> <button class="mk_b">Kosárba</button></div>`;
     txt += `</div>`;
   }
@@ -38,7 +38,7 @@ function ablakSzerk(id) {
   let txt = "";
   txt += `<div class="ablak_container">`;
   txt += `<a class="bezar">X</a>`;
-  txt += `<h2>${KUTYALISTA[id].nev}</h2>`;
+  txt += `<h2>${JATEKLISTA[id].nev}</h2>`;
   txt += `<video controls autoplay width="100%">
   <source src="${VIDEOLISTA[id]}">`;
   return txt;

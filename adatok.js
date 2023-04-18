@@ -1,4 +1,4 @@
-export const KUTYALISTA = [
+export const JATEKLISTA = [
     {
         nev: "Counter Strike Global Offensive",
         ar: "Ingyenes",
