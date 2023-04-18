@@ -37,7 +37,17 @@ main {
     border: none;
     border-radius: 5px;
 }
-.kosar_b{
+.kosar{
+    background-color: darkblue;
+    border: none;
+    border-radius: 5px;
+}
+.admin{
+    background-color: darkblue;
+    border: none;
+    border-radius: 5px;
+}
+.user{
     background-color: darkblue;
     border: none;
     border-radius: 5px;

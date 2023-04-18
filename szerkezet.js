@@ -12,9 +12,9 @@ function feltolt() {
   txt += `<nav>
             <div class="nav_container">
                 <ul>
-                  <li><a>Public felület</a></li>
-                  <li><a>Admin felülelt</a></li>
-                  <li><button class="kosar_b">KOSÁR</button></li>
+                <li><a href = "index.html" class = "user">USER</a></li>
+                  <li><a href = "form.html" class = "admin">ADMIN</a></li>
+                  <li><a href = "kosar.html" class = "kosar">KOSÁR</a></li>
                 </ul>
             </div>
         </nav>`;
@@ -38,7 +38,7 @@ function ablakSzerk(id) {
   let txt = "";
   txt += `<div class="ablak_container">`;
   txt += `<a class="bezar">X</a>`;
-  txt += `<h2>${JATEKLISTA[id].nev}</h2>`;
+  txt += `<h2>${JATEKLISTA[id].nev}</h2>`; 
   txt += `<video controls autoplay width="100%">
   <source src="${VIDEOLISTA[id]}">`;
   return txt;
