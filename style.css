@@ -37,6 +37,14 @@ main {
     border: none;
     border-radius: 5px;
 }
+
+.mk_bn{
+    background-color: darkblue;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
 .kosar{
     background-color: darkblue;
     border: none;

@@ -29,7 +29,7 @@ export const JATEKLISTA = [
         ar: "60€",
         fajta: "Akció"
     }
-]
+];
 
 export const KEPLISTA = ["img/header.jpg",
     "img/header1.jpg",
@@ -44,4 +44,8 @@ export const VIDEOLISTA = ["img/movie480.webm",
     "img/movie480_vp10.webm",
     "img/movie480_vp11_Trim.webm",
     "img/movie480_vp912.webm",
-    "img/movie480_vp913.webm"]
+    "img/movie480_vp913.webm"];
+
+export const KOSAR = [
+    
+]

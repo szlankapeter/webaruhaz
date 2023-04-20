@@ -4,6 +4,7 @@ $(function () {
   const txt = feltolt();
   main.html(txt);
   popUp();
+  popUpKosar();
 });
 
 function feltolt() {
@@ -14,19 +15,20 @@ function feltolt() {
                 <ul>
                 <li><a href = "index.html" class = "user">USER</a></li>
                   <li><a href = "form.html" class = "admin">ADMIN</a></li>
-                  <li><a href = "kosar.html" class = "kosar">KOSÁR</a></li>
+                  <li><button class="mk_bn" id = "kosar">KOSÁR</button></li>
                 </ul>
             </div>
         </nav>`;
 
   txt += `<article class="row">`;
   for (let i = 0; i < JATEKLISTA.length; i++) {
-    txt += `<div class="col-sm-3">`;
+    txt += `<div class="col-sm-3" id="elem${i}">`;
     txt += `<img src=${KEPLISTA[i]}>`;
+    console.log(JATEKLISTA[i].nev)
     txt += `<h2>${JATEKLISTA[i].nev}</h2>`;
     txt += `<p>ár: ${JATEKLISTA[i].ar}</p>`;
     txt += `<p>műfaj: ${JATEKLISTA[i].fajta}</p>`;
-    txt += `<div class="button_container"><button id="showItem-${i}" class="mk_b">Mutat</button> <button class="mk_b">Kosárba</button></div>`;
+    txt += `<div class="button_container"><button id="showItem-${i}" class="mk_b">Mutat</button> <button class="mk_b" id = "kosarba${i}">Kosárba</button></div>`;
     txt += `</div>`;
   }
   txt += "</article>";
@@ -60,4 +62,27 @@ function popUp() {
     module.remove();
   })
   
+}
+
+function kosarSzerk() {
+  let txt = "";
+  txt += `<div class="ablak_container">`;
+  txt += `<a class="bezar">X</a>`;
+  txt += `<h2>Kosár tartalma:</h2>`; 
+  txt += `</div>`;
+  return txt;
+}
+
+function popUpKosar() {
+  const body = $("body");
+ 
+  $("#kosar").on("click", function(){
+    const txt = kosarSzerk();
+    body.append(txt);
+  })
+  
+  $(document).on('click', ".bezar", function(){
+    const module = $(".ablak_container");
+    module.remove();
+  })
 }
