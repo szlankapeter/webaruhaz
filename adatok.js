@@ -1,30 +1,36 @@
 export const JATEKLISTA = [
     {
+        id: 1,
         nev: "Counter Strike Global Offensive",
         ar: "Ingyenes",
         fajta: "Akció"
     },
     {
+        id: 2,
         nev: "Cyberpunk 2077",
         ar: "60€",
         fajta: "Akció"
     },
     {
+        id: 3,
         nev: "Call of Duty Modern Warfare",
         ar: "60€",
         fajta: "Akció"
     },
     {
+        id: 4,
         nev: "Elden Ring",
         ar: "60€",
         fajta: "Akció"
     },
     {
+        id: 5,
         nev: "DEATH STRANDING",
         ar: "60€",
         fajta: "Akció"
     },
     {
+        id: 6,
         nev: "Spider-Man: Miles Morales",
         ar: "60€",
         fajta: "Akció"
