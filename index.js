@@ -28,7 +28,7 @@ function feltolt() {
     txt += `<h2>${JATEKLISTA[i].nev}</h2>`;
     txt += `<p>ár: ${JATEKLISTA[i].ar}</p>`;
     txt += `<p>műfaj: ${JATEKLISTA[i].fajta}</p>`;
-    txt += `<div class="button_container"><button id="showItem-${i}" class="mk_b">Mutat</button> <button class="mk_b" id = "kosarba${i}">Kosárba</button></div>`;
+    txt += `<div class="button_container"><button id="showItem-${i}" class="mk_b">Mutat</button> <button class="mk_b" id = "kosarba-${i}">Kosárba</button></div>`;
     txt += `</div>`;
   }
   txt += "</article>";
@@ -50,7 +50,7 @@ function popUp() {
   const alap = feltolt();
   const body = $("body");
  
-  $("button").on("click", function(event){
+  $(".mk_b").on("click", function(event){
     let id = parseInt(event.target.id.split("-")[1]);
     const txt = ablakSzerk(id);
     body.append(txt);
@@ -76,7 +76,7 @@ function kosarSzerk() {
 function popUpKosar() {
   const body = $("body");
  
-  $("#kosar").on("click", function(){
+  $(".mk_bn").on("click", function(){
     const txt = kosarSzerk();
     body.append(txt);
   })
