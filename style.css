@@ -38,6 +38,12 @@ main {
     border-radius: 5px;
 }
 
+.mk_bk{
+    background-color: darkblue;
+    border: none;
+    border-radius: 5px;
+}
+
 .mk_bn{
     background-color: darkblue;
     border: none;

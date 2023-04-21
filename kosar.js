@@ -6,7 +6,7 @@ $(function () {
   });
 
 function kosarHozzaad(){
-  let kosarGomb = $('.mk_b');
+  let kosarGomb = $('.mk_bk');
   let elem = $(".elem_1")
   kosarGomb.on("click", function(){
     KOSAR.push(elem)

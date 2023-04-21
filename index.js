@@ -28,7 +28,7 @@ function feltolt() {
     txt += `<h2>${JATEKLISTA[i].nev}</h2>`;
     txt += `<p>ár: ${JATEKLISTA[i].ar}</p>`;
     txt += `<p>műfaj: ${JATEKLISTA[i].fajta}</p>`;
-    txt += `<div class="button_container"><button id="showItem-${i}" class="mk_b">Mutat</button> <button class="mk_b" id = "kosarba-${i}">Kosárba</button></div>`;
+    txt += `<div class="button_container"><button id="showItem-${i}" class="mk_b">Mutat</button> <button class="mk_bk" id = "kosarba-${i}">Kosárba</button></div>`;
     txt += `</div>`;
   }
   txt += "</article>";
